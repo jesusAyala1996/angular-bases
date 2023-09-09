@@ -25,6 +25,7 @@ export class DbzService  {
     }
   ];
 
+  //logica para agregar personaje
   addCharacter(character:Character):void{
     const newCharacter:Character = {id:uuid(), ...character}
     this.characters.push(newCharacter);
@@ -34,6 +35,7 @@ export class DbzService  {
     this.characters.splice(index,1)
   }*/
 
+  //logica para borrar personaje
   deleteCharacterById (id:string){
     this.characters = this.characters.filter(character =>character.id !== id)
   }

@@ -7,6 +7,8 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './main-page.component.html',
 })
 export class MainPageComponent {
+  //Contructro mainpage que recibe un parametro tipo dbzservice
+  //inyeccion de dependencias
   constructor(private dbzService: DbzService) { }
 
   get characters():Character[]{
